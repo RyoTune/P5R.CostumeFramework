@@ -2,7 +2,7 @@
   "ModId": "P5R.CostumeFramework",
   "ModName": "Costume Framework",
   "ModAuthor": "RyoTune",
-  "ModVersion": "1.0.40",
+  "ModVersion": "1.0.41",
   "ModDescription": "Streamlines and enhances outfit mods!",
   "ModDll": "P5R.CostumeFramework.dll",
   "ModIcon": "Preview.png",
@@ -18,6 +18,24 @@
   "PluginData": {
     "GitHubDependencies": {
       "IdToConfigMap": {
+        "BGME.Framework": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BGME.Framework.ReleaseMetadata.json"
+        },
+        "BGME.Framework.API": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
+        },
         "crifs.v2.hook": {
           "Config": {
             "UserName": "Sewer56",
@@ -90,6 +108,33 @@
           },
           "ReleaseMetadataName": "SPD.File.Emulator.ReleaseMetadata.json"
         },
+        "BGME.BattleThemes": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME.BattleThemes",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BGME.BattleThemes.ReleaseMetadata.json"
+        },
+        "Ryo.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "Ryo",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
+        },
+        "SharedScans.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "SharedScans",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
+        },
         "CriFs.V2.Hook.Awb": {
           "Config": {
             "UserName": "Sewer56",
@@ -98,6 +143,42 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "CriFs.V2.Hook.Awb.ReleaseMetadata.json"
+        },
+        "reloaded.universal.fileemulationframework.bmd": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BMD.File.Emulator.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Framework": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Framework.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Steam": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Steam.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Windows": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Windows.ReleaseMetadata.json"
         },
         "reloaded.universal.fileemulationframework.awb": {
           "Config": {
@@ -119,34 +200,11 @@
         }
       }
     },
-    "GameBanana": {
-      "ItemType": "Mod",
-      "ItemId": 488633
-    },
-    "GameBananaDependencies": {
-      "IdToConfigMap": {
-        "BGME.Framework": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 477399
-          },
-          "ReleaseMetadataName": "BGME.Framework.ReleaseMetadata.json"
-        },
-        "BGME.Framework.API": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 477399
-          },
-          "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
-        },
-        "BGME.BattleThemes": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 488707
-          },
-          "ReleaseMetadataName": "BGME.BattleThemes.ReleaseMetadata.json"
-        }
-      }
+    "GitHubRelease": {
+      "UserName": "RyoTune",
+      "RepositoryName": "P5R.CostumeFramework",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
     }
   },
   "IsUniversalMod": false,
@@ -167,5 +225,7 @@
   "SupportedAppId": [
     "p5r.exe"
   ],
-  "ProjectUrl": ""
+  "ProjectUrl": "",
+  "CreatorUrl": "",
+  "IsSeparator": false
 }
