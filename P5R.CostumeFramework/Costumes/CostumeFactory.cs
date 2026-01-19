@@ -1,5 +1,6 @@
 ﻿using CriFs.V2.Hook.Interfaces;
 using P5R.CostumeFramework.Models;
+using System.Runtime.InteropServices;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
@@ -149,6 +150,21 @@ internal class CostumeFactory
             foreach (var file in Directory.EnumerateFiles(costumeBindDir, "*", SearchOption.AllDirectories))
             {
                 this.criFsApi.AddBind(file, Path.GetRelativePath(costumeBindDir, file), "Costume Framework");
+            }
+        }
+
+        var animationsDir = Path.Join(costumeDir, "animations");
+        if (Directory.Exists(animationsDir))
+        {
+            var gapFiles = Directory.GetFiles(animationsDir, "*.gap", SearchOption.TopDirectoryOnly);
+
+            foreach (var gapFile in gapFiles)
+            {
+                var fileName = Path.GetFileName(gapFile).ToLower();
+                var relativePath = Path.GetRelativePath(costumesDir, gapFile);
+
+                costume.CombatGAP_BindPaths[fileName] = relativePath;
+                this.criFsApi.AddBind(gapFile, relativePath, "Costume Framework");
             }
         }
 
